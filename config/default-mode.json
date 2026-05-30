@@ -1,0 +1,79 @@
+{
+  "name": "FirstMVPSkill Default Mode",
+  "version": "0.1.0",
+  "default_output_mode": "compact",
+  "upgrade_to_standard_when": [
+    "user asks for a 7-day MVP plan",
+    "user needs a copy-paste agent command",
+    "user is starting a new MVP"
+  ],
+  "upgrade_to_full_when": [
+    "user explicitly asks for full detail",
+    "user is writing documentation or examples",
+    "user is preparing a launch package"
+  ],
+  "full_mode_rule": "chunk_by_section",
+  "mvp_rules": {
+    "feature_count": {
+      "min": 1,
+      "max": 3
+    },
+    "tool_count": {
+      "min": 2,
+      "max": 4
+    },
+    "default_timeline_days": 7,
+    "always_include_not_in_v1": true,
+    "always_include_acceptance_gate": true,
+    "always_include_next_action": true
+  },
+  "agent_rules": {
+    "primary_agent_first": true,
+    "multi_agent_default": false,
+    "advanced_playbooks_default": false,
+    "adapt_to_user_current_agent": true,
+    "include_project_context_pack": true
+  },
+  "output_shape": {
+    "compact": [
+      "diagnosis",
+      "recommendation",
+      "one relevant file or command",
+      "next action"
+    ],
+    "standard": [
+      "tiny_mvp",
+      "not_in_v1",
+      "minimal_practical_stack",
+      "7_day_plan",
+      "project_context_pack",
+      "day_1_command",
+      "acceptance_gate",
+      "next_action"
+    ],
+    "full": [
+      "project_input_clarification",
+      "user_level_diagnosis",
+      "project_positioning",
+      "target_user_and_core_pain",
+      "tiny_mvp",
+      "not_in_v1",
+      "success_criteria",
+      "minimal_practical_stack",
+      "7_day_launch_plan",
+      "project_context_pack",
+      "agent_command_pack",
+      "multi_agent_task_split",
+      "validation_anti_overbuilding_next_action",
+      "execution_feedback_loop"
+    ]
+  },
+  "do_not": [
+    "do not recommend switching tools by default",
+    "do not output all playbooks by default",
+    "do not exceed 3 MVP features",
+    "do not exceed 4 tools in the minimal practical stack",
+    "do not skip acceptance gates",
+    "do not leave the user without one next action"
+  ]
+}

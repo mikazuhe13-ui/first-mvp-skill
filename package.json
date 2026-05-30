@@ -1,0 +1,53 @@
+{
+  "name": "first-mvp-skill",
+  "version": "0.1.0",
+  "description": "Turn vague AI ideas into 7-day MVP launch loops with copy-paste commands for AI agents.",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikazuhe13-ui/first-mvp-skill.git"
+  },
+  "homepage": "https://github.com/mikazuhe13-ui/first-mvp-skill#readme",
+  "bugs": {
+    "url": "https://github.com/mikazuhe13-ui/first-mvp-skill/issues"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "bin": {
+    "first-mvp-skill": "bin/first-mvp-skill.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "commands/",
+    "templates/",
+    "checklists/",
+    "examples/",
+    "playbooks/",
+    "routing/",
+    "docs/",
+    "assets/",
+    "config/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ai",
+    "mvp",
+    "agent",
+    "skill",
+    "codex",
+    "claude-code",
+    "cursor"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}

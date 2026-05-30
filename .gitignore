@@ -1,0 +1,12 @@
+node_modules/
+.npm-cache/
+npm-debug.log*
+*.tgz
+.tmp-install-test/
+.DS_Store
+
+.npm-cache/
+.tmp-install-test/
+
+.npm-cache/
+.tmp-install-test/
