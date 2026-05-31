@@ -55,6 +55,7 @@ flowchart LR
 | Can't choose which mode / 不知道选什么模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
 | First-time user / 第一次使用 | [START_HERE.md](START_HERE.md) |
 | Student or creator / 学生或创作者 | [examples/closed-loop-ai-study-assistant.md](examples/closed-loop-ai-study-assistant.md) |
+| Want to see a live demo / 想看真实 demo | [examples/real-build-ai-action-plan-generator.md](examples/real-build-ai-action-plan-generator.md) |
 | Have an idea but no plan / 有想法但没计划 | [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md) |
 | Want to choose the right command / 不知道用哪条指令 | [commands/README.md](commands/README.md) |
 | Need agent commands / 需要写 Agent 指令 | [commands/planning-command.md](commands/planning-command.md) |
@@ -157,7 +158,7 @@ That is the smallest useful path: one idea, one next action, one working result.
 | `commands/` | Copy-paste Agent Command Pack for planning, coding, review, fix, and feedback |
 | `templates/` | Project Context Pack, status, MVP plan, and task brief templates |
 | `checklists/` | Acceptance Gate, launch readiness, scope, and command checks |
-| `examples/` | Real beginner-friendly AI MVP examples |
+| `examples/` | Real beginner-friendly AI MVP examples + live demo case study |
 | `playbooks/` | Advanced decisions: Agent Mode Matrix, subagents, long tasks, fallback workflows |
 | `routing/` | Skill routing and token-efficient Compact / Standard / Full Mode rules |
 | `demo/` | Live demo: AI Action Plan Generator (HTML, zero dependencies) |
@@ -175,6 +176,7 @@ That is the smallest useful path: one idea, one next action, one working result.
 | Troubleshooting / 报错处理 | [docs/troubleshooting.md](docs/troubleshooting.md) |
 | FAQ / 常见问题 | [docs/faq.md](docs/faq.md) |
 | Token modes / Token 模式 | [routing/token-budget-policy.md](routing/token-budget-policy.md) |
+| Agent Compatibility / 智能体兼容性 | [docs/agent-compatibility.md](docs/agent-compatibility.md) |
 | Contributing / 参与贡献 | [docs/contributing.md](docs/contributing.md) |
 
 ## How this differs / 和类似项目有什么不同
