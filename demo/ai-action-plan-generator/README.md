@@ -4,9 +4,19 @@
 
 ---
 
-## Screenshot / 截图
+## Screenshots / 截图
 
-![AI Action Plan Generator demo](../../assets/screenshots/ai-action-plan-generator.png)
+### Input / 输入
+
+![AI Action Plan Generator input](../../assets/screenshots/ai-action-plan-generator-input.png)
+
+### Output / 输出
+
+![AI Action Plan Generator output](../../assets/screenshots/ai-action-plan-generator-output.png)
+
+### Full demo / 完整效果
+
+![AI Action Plan Generator full demo](../../assets/screenshots/ai-action-plan-generator.png)
 
 ---
 

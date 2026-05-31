@@ -4,9 +4,13 @@
 
 This is a real working demo built with FirstMVPSkill.
 
-## Screenshot / 截图
+## Screenshots / 截图
 
-![AI Action Plan Generator demo](../assets/screenshots/ai-action-plan-generator.png)
+![AI Action Plan Generator input](../assets/screenshots/ai-action-plan-generator-input.png)
+
+![AI Action Plan Generator output](../assets/screenshots/ai-action-plan-generator-output.png)
+
+![AI Action Plan Generator full demo](../assets/screenshots/ai-action-plan-generator.png)
 
 ## Real demo / 真实 Demo
 
