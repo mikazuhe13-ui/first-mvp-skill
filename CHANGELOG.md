@@ -20,3 +20,13 @@ All notable changes to FirstMVPSkill will be documented in this file.
 - Bilingual README (Chinese + English)
 - Mermaid flowchart for core loop
 - Hero image and visual assets
+- Live demo: AI Action Plan Generator (HTML, zero dependencies)
+- GitHub issue and PR templates
+- Agent Skill Ladder (Level 0-5 progression guide)
+
+### Changed
+- Positioning broadened from "beginner-first" to "decision-making system" — now also serves users who can't choose between tools, modes, or configurations
+- README hero tagline now leads with "Can't choose a tool? Can't pick a mode?"
+- "Choose your path" table expanded with tool/mode selection entries
+- "How this differs" table now includes "Tool comparisons" row
+- "Why this exists" section updated to emphasize anti-decision-fatigue

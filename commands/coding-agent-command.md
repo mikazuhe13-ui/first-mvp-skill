@@ -32,6 +32,14 @@ Use this command when you're ready to build a specific feature. Gives your AI ag
 
 保留英文命令主体以提升模型执行稳定性。每次只让 Agent 做一个明确任务，并保持 Not in V1 和 Acceptance Gate 可见。
 
+构建前先让 Agent 给 2-3 个实现方案，推荐最小方案。如果选择会改变 MVP scope，先确认再执行。
+
+Before building, ask the agent to propose 2-3 implementation options and recommend the smallest one. If the choice changes MVP scope, confirm before implementation.
+
+**Time rule:** 时间更多，不代表功能更多。时间更多，应该用于更好的 review、更清晰的 UX、更少的 bug 和更稳定的 launch。
+
+**Time rule:** More time does not mean more features. More time means better review, cleaner UX, fewer bugs, and clearer launch.
+
 ### For building a new feature
 
 ```
@@ -61,6 +69,17 @@ Use this command when you're ready to build a specific feature. Gives your AI ag
 
 **What not to change:**
 - [File/feature to protect]
+
+---
+
+## Options before building
+
+Before implementation:
+1. Propose 2-3 implementation options
+2. Recommend the smallest option
+3. Explain tradeoffs briefly
+4. Ask for confirmation if the choice changes MVP scope
+5. Build only the selected option
 
 ---
 

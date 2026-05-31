@@ -12,6 +12,7 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 ---
 ## Project: [NAME]
 ## Start date: [DATE]
+## Daily time budget: [15-30 min / 1 hour / 2+ hours]
 
 ---
 
@@ -42,24 +43,23 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 - [Criterion 2]
 ```
 
+**Time rule:** More time does not mean more features. Extra time goes to review, testing, UX polish, bug fixing, and launch readiness.
+
 ---
 
 ## Day 1: Setup
 
-**Task:** Create project, initialize environment
-**Deliverable:** Code runs locally
-**Verify:** `npm run dev` / `streamlit run app.py` opens the page
+**Goal:** Create the smallest running project.
 
-**Command:**
-```
-[Paste your Day 1 command here]
-```
+**If you have 30 min:** Define Tiny MVP, create the project folder, and make a blank page or command run.
 
-**Checklist:**
-- [ ] Project directory created
-- [ ] Dependencies installed
-- [ ] Code runs without errors
-- [ ] Git initialized
+**If you have 1 hour:** Add the first visible UI or command flow and test it once.
+
+**If you have 2+ hours:** Run one review pass and fix obvious setup issues.
+
+**Acceptance Gate:** The project opens locally without errors.
+
+**Next action:** Start Day 2 with one feature only.
 
 **Actual result:** ____
 
@@ -67,20 +67,17 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 
 ## Day 2: Feature 1
 
-**Task:** Implement [Feature 1]
-**Deliverable:** Feature 1 works
-**Verify:** [How to test]
+**Goal:** Build [Feature 1].
 
-**Command:**
-```
-[Paste your Day 2 command here]
-```
+**If you have 30 min:** Build the smallest usable version.
 
-**Checklist:**
-- [ ] Feature implemented
-- [ ] Manually tested
-- [ ] No obvious bugs
-- [ ] Acceptance gate: PASS / NEEDS FIX / FAIL
+**If you have 1 hour:** Build and manually test with one real input.
+
+**If you have 2+ hours:** Review, fix, and polish the UX copy.
+
+**Acceptance Gate:** Feature 1 works for one real input.
+
+**Next action:** Update Project Context Pack.
 
 **Actual result:** ____
 
@@ -88,20 +85,17 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 
 ## Day 3: Feature 2 (optional)
 
-**Task:** Implement [Feature 2]
-**Deliverable:** Feature 2 works
-**Verify:** [How to test]
+**Goal:** Build [Feature 2] only if it is still needed.
 
-**Command:**
-```
-[Paste your Day 3 command here]
-```
+**If you have 30 min:** Cut, simplify, or define the narrowest version.
 
-**Checklist:**
-- [ ] Feature implemented
-- [ ] Manually tested
-- [ ] No obvious bugs
-- [ ] Acceptance gate: PASS / NEEDS FIX / FAIL
+**If you have 1 hour:** Build the smallest working path.
+
+**If you have 2+ hours:** Build, test, and fix issues without expanding scope.
+
+**Acceptance Gate:** Feature 2 does not break Feature 1.
+
+**Next action:** Continue or simplify.
 
 **Actual result:** ____
 
@@ -109,20 +103,17 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 
 ## Day 4: Feature 3 (optional)
 
-**Task:** Implement [Feature 3]
-**Deliverable:** Feature 3 works
-**Verify:** [How to test]
+**Goal:** Build [Feature 3] only if it is essential.
 
-**Command:**
-```
-[Paste your Day 4 command here]
-```
+**If you have 30 min:** Decide whether to cut it from V1.
 
-**Checklist:**
-- [ ] Feature implemented
-- [ ] Manually tested
-- [ ] No obvious bugs
-- [ ] Acceptance gate: PASS / NEEDS FIX / FAIL
+**If you have 1 hour:** Build one narrow path.
+
+**If you have 2+ hours:** Test edge cases and polish.
+
+**Acceptance Gate:** MVP still has 1-3 features.
+
+**Next action:** Prepare integration.
 
 **Actual result:** ____
 
@@ -130,16 +121,17 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 
 ## Day 5: Integration
 
-**Task:** Connect all features, fix bugs
-**Deliverable:** Full flow works
-**Verify:** Test end-to-end
+**Goal:** Make the full user flow work.
 
-**Checklist:**
-- [ ] All features connected
-- [ ] Full flow tested
-- [ ] Bugs fixed
-- [ ] Error handling added
-- [ ] Acceptance gate: PASS / NEEDS FIX / FAIL
+**If you have 30 min:** Test the main path once and record blockers.
+
+**If you have 1 hour:** Fix the most obvious bug.
+
+**If you have 2+ hours:** Run review, fix, and simplify.
+
+**Acceptance Gate:** A user can complete the core flow.
+
+**Next action:** Prepare deploy.
 
 **Actual result:** ____
 
@@ -147,20 +139,17 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 
 ## Day 6: Deploy
 
-**Task:** Deploy to [platform]
-**Deliverable:** Live URL
-**Verify:** URL works in browser
+**Goal:** Create a live URL or shareable demo.
 
-**Command:**
-```
-[Paste your deploy command here]
-```
+**If you have 30 min:** Prepare the deploy checklist and push code.
 
-**Checklist:**
-- [ ] Code pushed to git
-- [ ] Deployed to platform
-- [ ] Environment variables set
-- [ ] URL works
+**If you have 1 hour:** Deploy and test the link.
+
+**If you have 2+ hours:** Fix deploy issues and update README.
+
+**Acceptance Gate:** The link opens outside your machine.
+
+**Next action:** Prepare launch.
 
 **Actual result:** ____
 
@@ -168,16 +157,17 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 
 ## Day 7: Ship
 
-**Task:** Write README, share
-**Deliverable:** Published product
-**Verify:** Someone else can use it
+**Goal:** Share the MVP with at least one real person.
 
-**Checklist:**
-- [ ] README written
-- [ ] Shared with 1 person
-- [ ] Feedback collected
-- [ ] Critical bugs fixed
-- [ ] Launch readiness: PASS / NOT READY
+**If you have 30 min:** Share the link and ask for one piece of feedback.
+
+**If you have 1 hour:** Collect feedback and note one fix.
+
+**If you have 2+ hours:** Fix launch blockers and polish docs.
+
+**Acceptance Gate:** One real person can try it.
+
+**Next action:** Decide continue, fix, or stop.
 
 **Actual result:** ____
 

@@ -1,10 +1,14 @@
-# Start Here / 新手从这里开始
+# Start Here / 从这里开始
 
 如果你是普通人、学生、创作者、AI 新手、vibe coder，或者只是有一个想法但不知道怎么做出来的人，从这里开始。
 
-你不需要先成为程序员。先做出一个能运行的小版本。
+**不知道用什么工具？不知道选什么模式？不知道从哪开始？**
+**别纠结了。先做出一个能运行的小版本。**
 
 If you are an ordinary user, student, creator, AI beginner, or anyone with an idea but no clear path to build it, start here.
+
+**Can't choose a tool? Can't pick a mode? Don't know where to start?**
+**Stop overthinking. Build a working mini version first.**
 
 这个文件是给第一次使用的人看的。如果你已经熟悉 AI Agent，可以直接看 `playbooks/agent-mode-matrix.md` 和 `routing/skill-router.md`。
 

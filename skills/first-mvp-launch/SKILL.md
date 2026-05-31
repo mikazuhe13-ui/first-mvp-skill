@@ -5,8 +5,8 @@ description: Use this skill when a user has a vague AI project idea and needs to
 
 # first-mvp-launch
 
-> 把模糊 AI 想法变成 7 天可执行 MVP。不要过度设计，不要工具跳跃。  
-> Turn your vague AI idea into a 7-day MVP. No overbuilding. No tool-hopping.
+> 把模糊 AI 想法变成 7 天可执行 MVP。帮你选工具、选模式、选路径。
+> Turn your vague AI idea into a 7-day MVP. We choose tools, modes, and paths for you.
 
 ---
 
@@ -48,6 +48,42 @@ Define the Tiny MVP first, then give the minimal stack and Day 1 command. Preser
 - 不要跳过 Acceptance Gates / Do not skip acceptance gates.
 - 不要推荐用户没用过的新工具，除非能在 1 小时内学会 / Do not recommend unfamiliar tools unless learnable in 1 hour.
 - 不要强迫用户切换工具 / Do not force users to switch tools.
+
+---
+
+## Time Budget / 时间预算
+
+如果用户给了每天可投入时间，就按时间调整 7-day plan。如果没有说明，默认每天 60 分钟。
+
+If the user gives daily available time, adapt the 7-day plan to that time. If not given, assume 60 minutes per day.
+
+| Daily time / 每天时间 | Planning strategy / 计划策略 |
+|---|---|
+| 15-30 min/day | 只做一个小动作，不追求完整功能 / Do one small action only |
+| 1 hour/day | 做一个小功能 + 一次验收 / Build one small feature and verify it |
+| 2-3 hours/day | 做功能、review、fix、优化 / Build, review, fix, and polish |
+| 4+ hours/day | 可以多轮优化，但不扩 scope / Run more iterations without expanding scope |
+
+**Rule:** 时间更多，不代表功能更多。时间更多，应该用于 review、测试、UX polish、bug fixing 和 launch readiness。
+
+**Rule:** More time does not mean more features. More time means better review, testing, UX polish, bug fixing, and launch readiness.
+
+---
+
+## Optimization Loop / 优化闭环
+
+使用这个小闭环推进执行：
+
+Use this compact loop for execution:
+
+```text
+Suggest → Choose → Build → Review → Optimize
+建议 → 选择 → 构建 → 检查 → 优化
+```
+
+- Agent 先提出 2-3 个可行方案 / Agent proposes 2-3 options.
+- 用户根据时间、想法和限制做选择 / User chooses based on time, personal ideas, and constraints.
+- Agent 只构建被选择的小范围 / Agent builds only the chosen small scope.
 
 ---
 
@@ -279,46 +315,66 @@ Recommend 2-4 tools, each with a clear job. No optional tools.
 
 ## 9. 7-day launch plan
 
-Generate a day-by-day plan:
+Generate a day-by-day plan adapted to the user's daily time budget. Each day must show the goal, time-band actions, Acceptance Gate, and one next action.
 
 ```markdown
 ## 7-day plan
 
 ### Day 1: Project setup
-- Create project directory
-- Initialize git
-- Write "hello world"
-- **Deliverable:** Code runs locally
+- Goal: Code runs locally
+- If you have 30 min: Define Tiny MVP and create the simplest project shell
+- If you have 1 hour: Add the first visible UI or command flow
+- If you have 2+ hours: Run one review and fix obvious issues
+- Acceptance Gate: The project opens locally without errors
+- Next action: Start Day 2 with one feature only
 
 ### Day 2: Feature 1
-- Implement [Feature 1]
-- Test manually
-- **Deliverable:** Feature 1 works
+- Goal: Implement [Feature 1]
+- If you have 30 min: Build the smallest usable version
+- If you have 1 hour: Build and manually test once
+- If you have 2+ hours: Review, fix, and polish the UX copy
+- Acceptance Gate: Feature 1 works for one real input
+- Next action: Update Project Context Pack
 
 ### Day 3: Feature 2
-- Implement [Feature 2]
-- Test manually
-- **Deliverable:** Feature 2 works
+- Goal: Implement [Feature 2] only if still needed
+- If you have 30 min: Cut or simplify the feature
+- If you have 1 hour: Build the smallest version
+- If you have 2+ hours: Build, test, and fix issues
+- Acceptance Gate: Feature 2 does not break Feature 1
+- Next action: Continue or simplify
 
 ### Day 4: Feature 3
-- Implement [Feature 3]
-- Test manually
-- **Deliverable:** Feature 3 works
+- Goal: Implement [Feature 3] only if it is essential
+- If you have 30 min: Decide whether to cut it
+- If you have 1 hour: Build one narrow path
+- If you have 2+ hours: Test edge cases and polish
+- Acceptance Gate: MVP still has 1-3 features
+- Next action: Prepare integration
 
 ### Day 5: Integration
-- Connect all features
-- Fix bugs
-- **Deliverable:** Full flow works
+- Goal: Full flow works
+- If you have 30 min: Test the main path once
+- If you have 1 hour: Fix the most obvious bug
+- If you have 2+ hours: Run review, fix, and simplify
+- Acceptance Gate: A user can complete the core flow
+- Next action: Prepare deploy
 
 ### Day 6: Deploy
-- Deploy to [platform]
-- Test online
-- **Deliverable:** Live URL
+- Goal: Live URL or shareable demo
+- If you have 30 min: Prepare deploy checklist
+- If you have 1 hour: Deploy and test the link
+- If you have 2+ hours: Fix deploy issues and update README
+- Acceptance Gate: Link opens outside your machine
+- Next action: Prepare launch
 
 ### Day 7: Ship
-- Write README
-- Share link
-- **Deliverable:** Published
+- Goal: Share the MVP
+- If you have 30 min: Share with one person
+- If you have 1 hour: Collect feedback and note one fix
+- If you have 2+ hours: Fix launch blockers and polish docs
+- Acceptance Gate: One real person can try it
+- Next action: Decide continue, fix, or stop
 ```
 
 ---
