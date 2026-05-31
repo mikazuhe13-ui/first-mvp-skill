@@ -4,6 +4,12 @@
 
 ---
 
+## Screenshot / 截图
+
+![AI Action Plan Generator demo](../../assets/screenshots/ai-action-plan-generator.png)
+
+---
+
 ## What this is
 
 这是 FirstMVPSkill 的一个最小可运行 demo。
