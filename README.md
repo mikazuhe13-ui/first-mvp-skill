@@ -127,6 +127,9 @@ Paste the Day 1 command into your current AI agent.
 
 That is the smallest useful path: one idea, one next action, one working result.
 
+**真实可运行示例 / Real working demo:**
+[AI Action Plan Generator](demo/ai-action-plan-generator/) — 一个中英双语 demo，展示 FirstMVPSkill 如何把模糊想法变成 Tiny MVP、Not in V1、7-Day Plan、Day 1 Agent Command、Acceptance Gate 和 Next Action。
+
 ## Quick start / 快速开始
 
 1. 克隆或下载这个仓库。  
