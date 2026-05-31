@@ -65,6 +65,7 @@ python -m http.server 8000
 
 - 5 套计划模板：学习 / 习惯 / 写作 / 编程 / 设计 / 通用
 - 8 个输出 section，完整展示 FirstMVPSkill 流程
+- 中英双语内联展示（中文主 + English 次）
 - Day 1 指令含具体文件名、代码要求、运行命令
 - Minimal Stack 推荐工具及各自用途
 - 示例 chips，点击直接生成

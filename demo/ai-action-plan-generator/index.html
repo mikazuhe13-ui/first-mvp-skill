@@ -14,18 +14,18 @@
 <body>
   <div class="container">
     <h1>FirstMVPSkill</h1>
-    <p class="subtitle">把一个模糊想法变成 7 天可执行 MVP</p>
+    <p class="subtitle">把一个模糊想法变成 7 天可执行 MVP<br><span class="subtitle-en">Turn a vague idea into a 7-day executable MVP</span></p>
 
     <div class="input-group">
       <input
         type="text"
         id="goalInput"
-        placeholder="例如：我想做一个 AI 学习助手"
+        placeholder="例如：我想做一个 AI 学习助手 / e.g. Build an AI study assistant"
         maxlength="100"
         autocomplete="off"
       >
       <button id="generateBtn">
-        <span class="btn-text">生成 MVP 计划</span>
+        <span class="btn-text">Generate / 生成</span>
         <span class="btn-loading hidden">
           <span class="spinner"></span>
         </span>
@@ -33,11 +33,11 @@
     </div>
 
     <div class="examples">
-      <span class="examples-label">试试这些：</span>
-      <button class="chip" data-goal="我想做一个 AI 学习助手帮助学生复习笔记">AI 学习助手</button>
-      <button class="chip" data-goal="我想做一个每日习惯打卡小工具">习惯打卡</button>
-      <button class="chip" data-goal="我想做一个帮我写公众号文章的 AI 工具">AI 写作</button>
-      <button class="chip" data-goal="我想做一个个人知识库检索工具">知识库</button>
+      <span class="examples-label">Try these / 试试这些：</span>
+      <button class="chip" data-goal="I want to build an AI study assistant that generates quiz questions from notes">Study AI / 学习助手</button>
+      <button class="chip" data-goal="I want to build a daily habit tracker">Habit Tracker / 习惯打卡</button>
+      <button class="chip" data-goal="I want to build an AI tool that helps me write blog posts">AI Writer / AI 写作</button>
+      <button class="chip" data-goal="I want to build a personal knowledge base search tool">Knowledge Base / 知识库</button>
     </div>
 
     <div id="result" class="result hidden">
@@ -75,10 +75,10 @@
       <div class="section section-command">
         <h3 class="section-title">Day 1 Agent Command / 智能体指令</h3>
         <div class="command-box">
-          <p id="day1Command"></p>
+          <pre id="day1Command" class="command-text"></pre>
           <button id="copyCommandBtn" class="copy-btn copy-command-btn">
-            <span class="copy-label">复制指令</span>
-            <span class="copy-check hidden">✓ 已复制</span>
+            <span class="copy-label">Copy / 复制</span>
+            <span class="copy-check hidden">✓</span>
           </button>
         </div>
       </div>
@@ -97,8 +97,8 @@
 
       <div class="result-footer">
         <button id="copyAllBtn" class="copy-btn">
-          <span class="copy-label">复制全部</span>
-          <span class="copy-check hidden">✓ 已复制</span>
+          <span class="copy-label">Copy All / 复制全部</span>
+          <span class="copy-check hidden">✓</span>
         </button>
         <span class="footer-note">Powered by FirstMVPSkill</span>
       </div>

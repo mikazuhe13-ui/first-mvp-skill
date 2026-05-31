@@ -55,7 +55,12 @@ h1 {
   color: #666;
   font-size: 14px;
   margin-bottom: 24px;
-  font-style: italic;
+}
+
+.subtitle-en {
+  font-size: 13px;
+  color: #aaa;
+  font-weight: 400;
 }
 
 /* ── Input ── */
@@ -286,6 +291,11 @@ button:active {
   margin-top: 2px;
 }
 
+.stack-item .bi-en {
+  padding-left: 0;
+  margin-top: 1px;
+}
+
 @media (max-width: 480px) {
   .stack-grid {
     grid-template-columns: 1fr;
@@ -322,6 +332,25 @@ button:active {
   color: #ff3366;
   font-weight: 900;
   margin-right: 8px;
+}
+
+.bi-en {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 400;
+  margin-top: 2px;
+  padding-left: 20px;
+}
+
+.exclude-list .bi-en,
+.gate-list .bi-en {
+  padding-left: 18px;
+}
+
+.next-action-text .bi-en {
+  padding-left: 0;
+  margin-top: 4px;
 }
 
 /* ── Exclude list ── */
@@ -389,6 +418,12 @@ button:active {
   margin-right: 4px;
 }
 
+#planContent .day .bi-en {
+  padding-left: 0;
+  margin-top: 4px;
+  color: #aaa;
+}
+
 /* ── Command box ── */
 
 .command-box {
@@ -398,11 +433,14 @@ button:active {
   position: relative;
 }
 
-.command-box p {
-  font-size: 14px;
+.command-text {
+  font-size: 13px;
   line-height: 1.7;
   color: #333;
   margin-bottom: 12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: "SF Mono", "Cascadia Code", "Consolas", monospace;
 }
 
 .copy-command-btn {
