@@ -32,22 +32,44 @@ Plans adapt to your daily time budget. Agents move fast; users decide, review, a
 
 ## Download / 下载
 
-**不知道 Git？**
-在 GitHub 页面点击绿色 **Code** 按钮 → **Download ZIP** → 解压 → 打开 `START_HERE.md` → 复制 starter prompt 到你的 AI 工具。
+### 方式 1：不懂 Git，直接下载 ZIP
 
-**Know Git?**
+1. 点击 GitHub 页面右上角绿色按钮 **Code**
+2. 点击 **Download ZIP**
+3. 解压文件
+4. 打开 `START_HERE.md`
+5. 复制 starter prompt 到你正在使用的 AI 工具里
+
+### 方式 2：会 Git
+
 ```bash
 git clone https://github.com/mikazuhe13-ui/first-mvp-skill.git
 cd first-mvp-skill
 ```
 
-**Agent 支持 skill folder？** 复制完整文件夹，不要只复制 SKILL.md：
+### 方式 3：会 npm / Node.js
+
+如果你已经安装 Node.js 和 npm，可以在项目目录里运行：
+
+```bash
+npm install -g .
+first-mvp-skill install
+```
+
+npm 不是必须的。FirstMVPSkill 本质上是 Agent Skill Pack，不是必须通过 npm 安装的软件包。
+
+### 如果你的 Agent 支持 skill folder
+
+复制完整文件夹，不要只复制 SKILL.md：
+
 ```text
 skills/first-mvp-launch/
 skills/agent-command-coach/
 ```
 
-**工具不支持 skills 或 slash commands？** 把 `START_HERE.md` 或 `commands/*.md` 当普通 prompt 使用。
+### 如果你的工具不支持 skills 或 slash commands
+
+直接把 `START_HERE.md` 或 `commands/*.md` 当作普通 prompt 使用。
 
 ## How it works / 工作流
 
