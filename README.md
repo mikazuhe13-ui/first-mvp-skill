@@ -3,6 +3,44 @@
 > 别再折腾工具，用智能体做出你的第一个 AI MVP。  
 > Stop tool-hopping. Ship your first AI MVP with agents.
 
+<p align="center">
+  <img src="assets/first-mvp-skill-hero.png" alt="FirstMVPSkill banner" width="100%">
+</p>
+
+第一次使用？先看：[Start Here / 新手从这里开始](START_HERE.md)
+
+FirstMVPSkill 新手优先，但不只服务新手。  
+Easy for beginners, useful for agent power users.
+
+欢迎 star、issue、PR，尤其欢迎贡献中文 AI MVP 新手案例。
+
+## Choose your path / 选择入口
+
+| You are... | Start here |
+|---|---|
+| First-time user / 第一次使用 | [START_HERE.md](START_HERE.md) |
+| Have an idea but no plan / 有想法但没计划 | [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md) |
+| Need agent commands / 需要写 Agent 指令 | [commands/planning-command.md](commands/planning-command.md) |
+| Choosing tool/mode / 不知道用哪个工具/模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
+| Current agent lacks features / 当前工具能力不够 | [playbooks/current-agent-adapter.md](playbooks/current-agent-adapter.md) |
+| Want token-efficient routing / 想减少 token 消耗 | [routing/skill-router.md](routing/skill-router.md) |
+
+## How it works / 工作流
+
+FirstMVPSkill 把一个模糊想法压缩成可执行、可检查、可发布的小项目闭环。
+
+FirstMVPSkill turns a vague idea into a small executable, reviewable, and shippable loop.
+
+```mermaid
+flowchart LR
+    A[Idea<br/>模糊想法] --> B[Tiny MVP<br/>最小可运行版本]
+    B --> C[Command<br/>给 Agent 下指令]
+    C --> D[Build<br/>构建]
+    D --> E[Review<br/>检查]
+    E --> F[Fix<br/>修复]
+    F --> G[Launch<br/>发布]
+```
+
 ---
 
 很多 AI 新手最后什么都没做出来，
@@ -26,10 +64,18 @@
 Most AI beginners do not fail because they lack ideas. They fail because they switch tools, overbuild too early, give vague prompts to agents, and never ship.
 
 FirstMVPSkill 不是通用 Prompt 集合。  
-它是一个面向新手的强约束 AI MVP 启动系统。
+它是一个新手优先、但不只服务新手的强约束 AI MVP 启动系统。
 
 FirstMVPSkill is not a generic prompt collection.  
-It is a constrained AI MVP launch system for beginners.
+It is a beginner-first, but not beginner-only, AI MVP launch system.
+
+FirstMVPSkill 新手优先，但不只服务新手。
+
+它也适合已经在使用 AI Agent、但不知道如何选择工具、模式、推理强度、subagent、long task 或 review gate 的用户。
+
+FirstMVPSkill is beginner-first, but not beginner-only.
+
+It is also useful for users who already use AI agents but need clearer decisions around tool choice, modes, reasoning effort, subagents, long tasks, and review gates.
 
 FirstMVPSkill 的目标，不是让你继续研究工具。
 
