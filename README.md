@@ -1,16 +1,23 @@
 # FirstMVPSkill
 
-> 别再折腾工具，用智能体做出你的第一个 AI MVP。  
+> 别再折腾工具，用智能体做出你的第一个 AI MVP。
 > Stop tool-hopping. Ship your first AI MVP with agents.
 
 <p align="center">
   <img src="assets/first-mvp-skill-hero.png" alt="FirstMVPSkill banner" width="100%">
 </p>
 
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
+  <img src="https://img.shields.io/badge/made%20for-idea%20builders-green" alt="Made for idea builders">
+  <img src="https://img.shields.io/badge/tools-6%20agents%20covered-orange" alt="6 agents covered">
+  <img src="https://img.shields.io/badge/status-v1.0.0-brightgreen" alt="v1.0.0">
+</p>
+
 第一次使用？先看：[Start Here / 新手从这里开始](START_HERE.md)
 
-FirstMVPSkill 新手优先，但不只服务新手。  
-Easy for beginners, useful for agent power users.
+普通人也能用 AI Agent，把想法做成第一个可运行的小作品、小工具或 AI MVP。  
+FirstMVPSkill helps ordinary people, beginners, students, creators, and agent users turn ideas into their first working project, tool, or AI MVP with AI agents.
 
 欢迎 star、issue、PR，尤其欢迎贡献中文 AI MVP 新手案例。
 
@@ -34,16 +41,20 @@ flowchart LR
 
 | You are... / 你的情况 | Start here / 从这里开始 |
 |---|---|
+| Ordinary person with an idea / 有想法的普通人 | [START_HERE.md](START_HERE.md) |
 | First-time user / 第一次使用 | [START_HERE.md](START_HERE.md) |
+| Student or creator / 学生或创作者 | [examples/closed-loop-ai-study-assistant.md](examples/closed-loop-ai-study-assistant.md) |
 | Have an idea but no plan / 有想法但没计划 | [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md) |
+| Want to choose the right command / 不知道用哪条指令 | [commands/README.md](commands/README.md) |
 | Need agent commands / 需要写 Agent 指令 | [commands/planning-command.md](commands/planning-command.md) |
-| Choosing tool/mode / 不知道用哪个工具或模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
+| Want to become better at using agents / 想逐步成为 Agent 熟练用户 | [docs/agent-skill-ladder.md](docs/agent-skill-ladder.md) |
+| Agent power user choosing tools/modes / 熟练用户选择工具或模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
 | Current agent lacks features / 当前工具能力不够 | [playbooks/current-agent-adapter.md](playbooks/current-agent-adapter.md) |
 | Want token-efficient routing / 想减少 token 消耗 | [routing/skill-router.md](routing/skill-router.md) |
 
 ## What this is / 这是什么
 
-很多 AI 新手最后什么都没做出来，不是因为没有想法，而是因为缺少一套真正能落地的使用手册：不知道怎么定义 Tiny MVP、怎么给 AI Agent 下指令、怎么做 Review、怎么进入 Fix 和 Launch。
+以前只有程序员能把想法做成产品。现在普通人、学生、创作者、AI 新手和 vibe coder 也可以用 AI Agent，把想法做成自己的小作品、小工具或 AI MVP。
 
 FirstMVPSkill 不是通用 Prompt 集合。它是一个新手优先、但不只服务新手的强约束 AI MVP 启动系统。
 
@@ -137,6 +148,17 @@ That is the smallest useful path: one idea, one next action, one working result.
 | FAQ / 常见问题 | [docs/faq.md](docs/faq.md) |
 | Token modes / Token 模式 | [routing/token-budget-policy.md](routing/token-budget-policy.md) |
 | Contributing / 参与贡献 | [docs/contributing.md](docs/contributing.md) |
+
+## How this differs / 和类似项目有什么不同
+
+| 其他项目类型 / Other type | 通常给什么 / Usually gives | FirstMVPSkill 给什么 / Gives |
+|---|---|---|
+| Prompt 集合 / Prompt collections | 很多 prompt 可以复制 | 一个完整 launch loop + commands + gates |
+| MVP 规划器 / MVP planners | 一个计划或路线图 | Tiny MVP + 7 天执行 + Project Context Pack |
+| Agent 教程 / Agent tutorials | 特定工具的教程 | 适配你已有工具的工作流 |
+| 模板仓库 / Boilerplates | 启动代码 | 做什么、怎么指挥 Agent、怎么检查、怎么发布 |
+
+---
 
 ## Why this exists / 为什么做这个
 

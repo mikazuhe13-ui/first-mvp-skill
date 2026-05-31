@@ -1,10 +1,10 @@
 # Start Here / 新手从这里开始
 
-如果你是 AI 新手、学生、vibe coder，或者只是有一个想法但一直没做出来，从这里开始。
+如果你是普通人、学生、创作者、AI 新手、vibe coder，或者只是有一个想法但不知道怎么做出来的人，从这里开始。
 
-你不需要先学会所有工具。你只需要先做出一个能运行的小版本。
+你不需要先成为程序员。先做出一个能运行的小版本。
 
-If you are new to AI agents and want to ship your first small AI MVP, start here.
+If you are an ordinary user, student, creator, AI beginner, or anyone with an idea but no clear path to build it, start here.
 
 这个文件是给第一次使用的人看的。如果你已经熟悉 AI Agent，可以直接看 `playbooks/agent-mode-matrix.md` 和 `routing/skill-router.md`。
 
@@ -12,7 +12,7 @@ This file is for first-time users. If you already use AI agents, jump to `playbo
 
 ## 这是什么
 
-FirstMVPSkill 是一个面向新手的 Agent Skill Pack。
+FirstMVPSkill 是一个面向普通人、新手、学生、创作者和 AI Agent 用户的 Agent Skill Pack。
 
 它帮你把一个模糊 AI 项目想法，变成：
 
@@ -120,5 +120,7 @@ Use: commands/execution-feedback-loop-command.md
 - 想安装 skill folder：读 [docs/installation.md](docs/installation.md)
 - 想看完整闭环例子：读 [examples/closed-loop-ai-study-assistant.md](examples/closed-loop-ai-study-assistant.md)
 - 想直接看核心 skill：读 [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md)
+- 想一步步变强：读 [docs/agent-skill-ladder.md](docs/agent-skill-ladder.md)
+- 不知道用哪条指令：读 [commands/README.md](commands/README.md)
 
 现在先做一件事：复制上面的 starter prompt，填入你的想法。
