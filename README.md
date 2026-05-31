@@ -30,6 +30,25 @@ Plans adapt to your daily time budget. Agents move fast; users decide, review, a
 
 欢迎 star、issue、PR，尤其欢迎贡献中文 AI MVP 新手案例。
 
+## Download / 下载
+
+**不知道 Git？**
+在 GitHub 页面点击绿色 **Code** 按钮 → **Download ZIP** → 解压 → 打开 `START_HERE.md` → 复制 starter prompt 到你的 AI 工具。
+
+**Know Git?**
+```bash
+git clone https://github.com/mikazuhe13-ui/first-mvp-skill.git
+cd first-mvp-skill
+```
+
+**Agent 支持 skill folder？** 复制完整文件夹，不要只复制 SKILL.md：
+```text
+skills/first-mvp-launch/
+skills/agent-command-coach/
+```
+
+**工具不支持 skills 或 slash commands？** 把 `START_HERE.md` 或 `commands/*.md` 当普通 prompt 使用。
+
 ## How it works / 工作流
 
 FirstMVPSkill 把一个模糊想法压缩成可执行、可检查、可发布的小项目闭环。
