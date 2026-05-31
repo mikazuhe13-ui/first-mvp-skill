@@ -1,32 +1,34 @@
 # Pull Request / 参与贡献
 
-感谢贡献 FirstMVPSkill。请保持改动简洁、可复制、新手友好。
+感谢贡献 FirstMVPSkill。请保持简短、实用、新手友好。
 
-Thanks for contributing. Keep changes concise, copy-paste usable, and beginner-friendly.
+Thanks for contributing. Keep it short, practical, and beginner-friendly.
 
-## 改了什么 / What changed?
+## What changed? / 改了什么？
 
-请简短说明：
+请用 1-3 句话说明：
 
-## 为什么有帮助 / Why does it help?
+## Why does this help users ship their first AI MVP? / 为什么有助于用户做出第一个 AI MVP？
 
-它如何帮助用户做出第一个 AI MVP？
+请说明它如何帮助用户更快完成 Tiny MVP、Agent command、Acceptance Gate 或 launch loop。
 
-## 是否增加复杂度 / Complexity check
+## Does this add complexity? / 是否增加复杂度？
 
-- 是否增加了新工具或新流程？
+- 是否新增工具、模式或流程？
 - 是否会让新手更难开始？
 - 是否默认引入 advanced modes、subagents 或 long tasks？
 
-## 链接检查 / Link check
+## Files changed / 修改文件
 
-如果改了文档或链接，请确认相关链接可用：
+- 
 
 ## Checklist
 
 - [ ] Copy-paste usable / 可复制使用
 - [ ] Beginner-friendly / 新手友好
-- [ ] No unnecessary tool hopping / 不引导不必要的工具跳跃
+- [ ] No unnecessary tool-hopping / 不引导不必要的工具跳跃
 - [ ] No advanced modes by default / 不默认使用高级模式
 - [ ] Acceptance Gate preserved / 保留验收标准
+- [ ] Token-efficient / 保持 token 友好
 - [ ] Docs updated if needed / 必要时已更新文档
+- [ ] Links checked if changed / 如修改链接，已检查可用

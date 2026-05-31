@@ -1,28 +1,39 @@
+---
+name: Bug report / 问题反馈
+about: Broken links, confusing docs, inconsistent terms, bad commands, or unusable workflows
+title: "[Bug] "
+labels: bug
+---
+
 # Bug report / 问题反馈
 
-用于反馈 broken links、文档不清楚、术语不一致、command 不好用、workflow 跑不通等问题。
+用于反馈 broken links、confusing docs、inconsistent terms、bad commands 或 unusable workflows。
 
 Use this for broken links, confusing docs, inconsistent terms, bad commands, or unusable workflows.
 
-## 发生了什么 / What happened?
+## What happened? / 发生了什么？
 
 请简短说明问题：
 
-## 位置 / Where?
+## Where is the problem? / 问题在哪里？
 
 - File or link:
 - Section:
 
-## 证据 / Evidence
+## Expected behavior / 期望结果
 
-请贴出具体内容、截图、报错、链接或复现步骤。
+你希望它如何工作？
 
-## 你期望什么 / Expected behavior
+## Screenshot or text / 截图或原文
 
-你希望它怎么改，才更容易帮助新手推进第一个 AI MVP？
+如果有截图、报错、原文、链接或复现步骤，请贴在这里。
+
+## Suggested fix / 建议修复
+
+如果你有建议，请写一句话：
 
 ## Do Not
 
-- 不要只写“有问题”，请给具体位置。
-- 不要提交无关功能请求；新功能请用 feature request。
-- Do not report vague issues without file, link, or context.
+- 不要只写“有问题”，请给具体位置或上下文。
+- 不要把功能建议放在这里；请用 feature request。
+- Do not report vague issues without evidence or concrete context.
