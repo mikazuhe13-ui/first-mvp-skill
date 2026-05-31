@@ -3,19 +3,25 @@
 > 别再折腾工具，用智能体做出你的第一个 AI MVP。  
 > Stop tool-hopping. Ship your first AI MVP with agents.
 
-`first-mvp-skill` 这个名字好记、好拼、好搜索，也保留了 GitHub 和 Agent 生态友好的英文关键词。
-
-`first-mvp-skill` is short, searchable, easy to spell, and clear about the promise: build your first MVP with AI agent help.
-
 ---
 
-很多 AI 新手失败，不是因为没有想法，而是因为：
+很多 AI 新手最后什么都没做出来，
+
+不是因为没有想法，
+
+而是缺少一套真正能落地的使用手册。
+
+他们常常会：
 
 - 一直换工具
-- 一开始就做太大
-- 不会指挥 AI Agent
-- 不知道怎么验收结果
-- 最后没有真正发布
+- 一开始就想做“大而全”
+- 不会给 AI Agent（智能体）下清晰指令
+- 不知道什么时候检查和回顾结果（review）
+- 不知道怎么形成：
+  “计划 → 构建 → 检查 → 修复 → 发布”
+  的闭环
+- 一直停留在“准备阶段”
+- 最后什么都没真正发布
 
 Most AI beginners do not fail because they lack ideas. They fail because they switch tools, overbuild too early, give vague prompts to agents, and never ship.
 
@@ -25,9 +31,52 @@ FirstMVPSkill 不是通用 Prompt 集合。
 FirstMVPSkill is not a generic prompt collection.  
 It is a constrained AI MVP launch system for beginners.
 
-它帮助你用已有的 AI Agent，把模糊想法变成可执行、可验收、可发布的第一个 AI MVP。
+FirstMVPSkill 的目标，不是让你继续研究工具。
 
-It helps you choose, command, adapt, review, and ship with the AI agents you already have.
+而是帮助你用已有的 AI Agent，真正做出：
+
+- 第一个可运行的 AI 项目
+- 第一个可检查、可修改的工作流
+- 第一个真正发布出去的 Tiny MVP（最小可运行版本）
+
+The goal is not to make you research more tools. It is to help you use the AI agents you already have to ship one small working AI project.
+
+## 30 秒 Demo / 30-second demo
+
+输入一个想法：
+
+```text
+I want to build an AI study assistant that helps students review notes.
+```
+
+FirstMVPSkill 会把它压缩成：
+
+```text
+Tiny MVP:
+1. Upload notes
+2. Generate practice questions
+3. Take quiz and see score
+
+Not in V1:
+- Login
+- Payment
+- Mobile app
+- Flashcards
+
+Day 1 command:
+Create a basic Streamlit app with a title, note uploader, and text preview.
+Do not add AI yet.
+
+Acceptance Gate:
+The app runs locally and displays uploaded text.
+
+Next action:
+Paste the Day 1 command into your current AI agent.
+```
+
+这就是最小可用路径。先做一个能运行的小结果，再继续检查、修复和发布。
+
+That is the smallest useful path: one idea, one next action, one working result.
 
 ### 为什么不一样 / What makes this different
 
@@ -37,17 +86,6 @@ It helps you choose, command, adapt, review, and ship with the AI agents you alr
 4. **不只是 prompt / Not just prompts.** 给你 commands、review steps、fix loops 和 launch checks。
 5. **新手优先 / Built for beginners.** One primary agent, one task, one next action.
 6. **默认省 token / Token-efficient by default.** 默认只加载相关 skill、command、checklist 或 playbook；Full Mode 只有在你要求时才分块展开。
-
-你只需要带来一个想法，FirstMVPSkill 会给你：
-- A Tiny MVP
-- A minimal practical stack
-- A 7-day execution plan
-- A Project Context Pack for your agent
-- Copy-paste agent commands
-- Review and fix gates
-- A launch loop that keeps you moving
-
-Bring one idea. FirstMVPSkill gives you a small, reviewable path to your first AI MVP.
 
 ---
 
@@ -97,54 +135,6 @@ Default behavior stays constrained:
 ```text
 docs/installation.md
 ```
-
----
-
-## 最小可用示例 / Minimal usable example
-
-先从一个想法开始。不要一上来读完所有 playbooks，也不要先研究一堆工具。
-
-Start with one idea. Do not read every playbook first.
-
-```text
-I want to build an AI study assistant that helps students review notes.
-```
-
-FirstMVPSkill 会把它压缩成一个能立刻执行的 Tiny MVP：
-
-FirstMVPSkill turns it into:
-
-```text
-Tiny MVP:
-1. Upload notes
-2. Generate practice questions
-3. Take quiz and see score
-
-Not in V1:
-- Login
-- Payment
-- Mobile app
-- Flashcards
-
-Minimal practical stack:
-- Streamlit: simple UI
-- One AI API: question generation
-- GitHub: save and publish code
-
-Day 1 command:
-Create a basic Streamlit app with a title, note uploader, and text preview.
-Do not add AI yet.
-
-Acceptance Gate:
-The app runs locally and displays uploaded text.
-
-Next action:
-Paste the Day 1 command into your current AI agent.
-```
-
-这就是最小可用路径。仓库里的其他文件只在你继续推进、审查、修复和发布时使用。
-
-That is the smallest useful path. Everything else in this repo exists to help you continue the loop.
 
 ---
 
@@ -456,14 +446,46 @@ first-mvp-skill/
 
 ## Why this exists
 
-Most AI beginners don't fail because they can't code. They fail because:
+Most AI beginners do not need every tool on Day 1. They need one idea, one next action, one working result, and a loop they can repeat.
+
+They usually get stuck because:
 
 1. They keep switching tools
 2. They don't define a clear MVP
 3. They give vague prompts to AI agents
 4. They never reach "done"
 
-FirstMVPSkill solves all four problems with a simple system: define a tiny MVP, use copy-paste agent commands, follow a 7-day plan, and ship.
+FirstMVPSkill solves this with a small system: define a Tiny MVP, use copy-paste agent commands, review the result, fix what matters, and ship.
+
+---
+
+## Philosophy / 项目理念
+
+FirstMVPSkill 希望帮助更多 AI 新手，
+
+第一次真正体验到：
+
+“AI 不只是聊天工具，
+
+而是可以帮助自己一步一步完成项目的执行伙伴。”
+
+你不需要一开始就精通所有工具。
+
+你只需要：
+
+```text
+一个想法
+→ 一个下一步动作
+→ 一个能运行的小结果
+```
+
+然后不断形成：
+
+```text
+Plan → Build → Review → Fix → Launch
+```
+
+的闭环。
 
 ---
 
