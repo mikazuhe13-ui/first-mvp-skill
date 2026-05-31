@@ -53,7 +53,6 @@ flowchart LR
 | Not sure where to start / 不确定从哪开始 | [START_HERE.md](START_HERE.md) |
 | Can't choose which tool to use / 不知道用什么工具 | [playbooks/agent-tool-playbook.md](playbooks/agent-tool-playbook.md) |
 | Can't choose which mode / 不知道选什么模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
-| First-time user / 第一次使用 | [START_HERE.md](START_HERE.md) |
 | Student or creator / 学生或创作者 | [examples/closed-loop-ai-study-assistant.md](examples/closed-loop-ai-study-assistant.md) |
 | Want to see a live demo / 想看真实 demo | [examples/real-build-ai-action-plan-generator.md](examples/real-build-ai-action-plan-generator.md) |
 | Have an idea but no plan / 有想法但没计划 | [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md) |
