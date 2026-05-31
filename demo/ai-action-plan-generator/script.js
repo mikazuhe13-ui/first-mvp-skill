@@ -398,7 +398,8 @@
   }
 
   function copyCommand(btn) {
-    navigator.clipboard.writeText(document.getElementById("day1Command").textContent).then(function () { flashCopy(btn); });
+    // Copy Chinese version only (ready to paste into agent)
+    navigator.clipboard.writeText(lastData.day1Command.zh).then(function () { flashCopy(btn); });
   }
 
   function flashCopy(btn) {

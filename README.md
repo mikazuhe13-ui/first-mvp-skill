@@ -50,6 +50,7 @@ flowchart LR
 
 | You are... / 你的情况 | Start here / 从这里开始 |
 |---|---|
+| Not sure where to start / 不确定从哪开始 | [START_HERE.md](START_HERE.md) |
 | Ordinary person with an idea / 有想法的普通人 | [START_HERE.md](START_HERE.md) |
 | Can't choose which tool to use / 不知道用什么工具 | [playbooks/agent-tool-playbook.md](playbooks/agent-tool-playbook.md) |
 | Can't choose which mode / 不知道选什么模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |

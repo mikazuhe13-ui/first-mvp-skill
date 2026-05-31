@@ -41,6 +41,8 @@ FirstMVPSkill 是一个面向普通人、新手、学生、创作者和 AI Agent
 
 把下面这段复制到你正在使用的 AI 工具里，比如 ChatGPT、Claude、Claude Code、Cursor 或 Codex。
 
+**中文版：**
+
 ```text
 我想做一个 AI 小项目，但不知道怎么开始。
 
@@ -65,6 +67,34 @@ FirstMVPSkill 是一个面向普通人、新手、学生、创作者和 AI Agent
 不要默认使用多 Agent
 输出要简洁
 先让我做出第一个可运行版本
+```
+
+**English version:**
+
+```text
+I want to build a small AI project but don't know where to start.
+
+My idea:
+[Write your idea here]
+
+Use FirstMVPSkill to output:
+
+1. User level
+2. Tiny MVP (1-3 features)
+3. Not in V1
+4. Minimal practical stack
+5. 7-day plan
+6. Day 1 command
+7. Acceptance Gate
+8. Next action
+
+Rules:
+
+Do not recommend too many tools
+Do not build a full SaaS
+Do not use multi-agent by default
+Keep output concise
+Help me build the first working version
 ```
 
 ## 你会得到什么

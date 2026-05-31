@@ -16,25 +16,6 @@ demo/ai-action-plan-generator/index.html
 
 Open in browser directly. No installation needed.
 
-## What this demo does / 这个 demo 做了什么
-
-用户输入一个模糊想法，demo 输出完整的 MVP 启动方案：
-
-User enters a vague idea. The demo outputs a complete MVP launch plan:
-
-1. **Goal / 目标** — 用户的原始想法
-2. **Tiny MVP / 最小可运行版本** — 1-3 个核心功能
-3. **Not in V1 / 第一版不做** — 明确排除的功能
-4. **Minimal Stack / 最小工具栈** — 2-4 个推荐工具
-5. **7-Day Plan / 7 天计划** — 每天具体做什么
-6. **Day 1 Agent Command / 智能体指令** — 可直接复制给 AI Agent 的指令
-7. **Acceptance Gate / 验收标准** — 怎么检查做得对不对
-8. **Next Action / 下一步** — 现在该做什么
-
-所有内容中英双语内联展示。
-
-All content displays bilingual inline (Chinese primary + English secondary).
-
 ## This demo is intentionally small / 这个 demo 故意做得很小
 
 - No backend / 没有后端
@@ -55,15 +36,39 @@ Uses the simplest tech stack (HTML + CSS + JS) to prove FirstMVPSkill's core ide
 
 ## What works / 已实现的功能
 
-- [x] 用户可以输入目标 / User can enter a goal
-- [x] 5 套分类模板自动匹配 / 5 category templates auto-matched
-- [x] 生成 8 个 section 的完整输出 / Generates all 8 sections
-- [x] 输出是中英双语 / Bilingual output
+- [x] 用户可以输入目标 / Users can enter a goal
+- [x] Demo 会生成 Tiny MVP、Not in V1、Minimal Stack、7-Day Plan、Day 1 Agent Command、Acceptance Gate、Next Action
+- [x] 输出是中英双语内联展示 / Output is Chinese-English bilingual inline
 - [x] Day 1 指令可独立复制 / Day 1 command copyable separately
 - [x] 全部内容可一键复制 / All content copyable at once
 - [x] 示例 chips 点击即生成 / Example chips generate instantly
 - [x] 空输入有 shake 提示 / Empty input triggers shake
 - [x] 移动端响应式 / Mobile responsive
+
+## Why this matters / 为什么这很重要
+
+这个 demo 证明 FirstMVPSkill 的工作流真的能把模糊想法变成可运行的小工具。
+
+This demo proves the FirstMVPSkill workflow can turn a vague idea into a small executable demo.
+
+它不是教程，不是模板，不是理论。它是一个打开就能用的东西。
+
+It is not a tutorial. Not a template. Not theory. It is a thing you can open and use right now.
+
+## What this demo does / 这个 demo 做了什么
+
+用户输入一个模糊想法，demo 输出完整的 MVP 启动方案：
+
+User enters a vague idea. The demo outputs a complete MVP launch plan:
+
+1. **Goal / 目标** — 用户的原始想法
+2. **Tiny MVP / 最小可运行版本** — 1-3 个核心功能
+3. **Not in V1 / 第一版不做** — 明确排除的功能
+4. **Minimal Stack / 最小工具栈** — 2-4 个推荐工具及各自用途
+5. **7-Day Plan / 7 天计划** — 每天具体做什么
+6. **Day 1 Agent Command / 智能体指令** — 可直接复制给 AI Agent 的具体指令
+7. **Acceptance Gate / 验收标准** — 怎么检查做得对不对
+8. **Next Action / 下一步** — 现在该做什么
 
 ## How it was built / 怎么做的
 
@@ -82,9 +87,7 @@ This demo is itself a product of the FirstMVPSkill workflow:
 
 ### Day 2: 搭建最小界面
 
-创建 index.html + style.css + script.js。
-
-用 mock 数据先跑通，不接 AI API。
+创建 index.html + style.css + script.js。用 mock 数据先跑通，不接 AI API。
 
 ### Day 3-4: 增加 FirstMVPSkill 特色
 
@@ -139,8 +142,8 @@ This demo is itself a product of the FirstMVPSkill workflow:
 
 Open the demo and try it:
 
-```bash
-open demo/ai-action-plan-generator/index.html
+```
+demo/ai-action-plan-generator/index.html
 ```
 
 然后用 FirstMVPSkill 为你自己的想法做同样的事。
