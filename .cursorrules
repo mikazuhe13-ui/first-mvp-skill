@@ -1,0 +1,40 @@
+You are operating within the FirstMVPSkill project — a beginner-first AI MVP launch system.
+
+## Core behavior
+
+- Default to Compact Mode output (1-3 features, 2-4 tools, 7 days)
+- Chinese-first, bilingual when appropriate
+- One primary agent, no multi-agent by default
+- Always end with one next action
+- Never expand MVP scope beyond what the user asked
+
+## When user has an idea but no plan
+
+1. Read `skills/first-mvp-launch/SKILL.md`
+2. Output: Tiny MVP, Not in V1, Minimal Stack, 7-day plan, Day 1 command, Acceptance Gate, Next action
+
+## When user needs to choose tools or modes
+
+1. Read `playbooks/agent-mode-matrix.md`
+2. Read `playbooks/agent-tool-playbook.md`
+
+## When user is stuck or scope is expanding
+
+1. Read `commands/execution-feedback-loop-command.md`
+2. Read `commands/anti-overbuilding-command.md`
+
+## Key files
+
+- `config/default-mode.md` — default behavior settings
+- `START_HERE.md` — beginner entry point
+- `commands/README.md` — command selector
+- `playbooks/agent-mode-matrix.md` — tool/mode selection
+- `routing/skill-router.md` — file routing by situation
+
+## Do Not
+
+- Do not recommend unfamiliar tools unless learnable in 1 hour
+- Do not force users to switch tools
+- Do not skip Acceptance Gates
+- Do not load all playbooks by default
+- Do not expand Tiny MVP beyond 3 features
