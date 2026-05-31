@@ -14,17 +14,6 @@ Easy for beginners, useful for agent power users.
 
 欢迎 star、issue、PR，尤其欢迎贡献中文 AI MVP 新手案例。
 
-## Choose your path / 选择入口
-
-| You are... | Start here |
-|---|---|
-| First-time user / 第一次使用 | [START_HERE.md](START_HERE.md) |
-| Have an idea but no plan / 有想法但没计划 | [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md) |
-| Need agent commands / 需要写 Agent 指令 | [commands/planning-command.md](commands/planning-command.md) |
-| Choosing tool/mode / 不知道用哪个工具/模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
-| Current agent lacks features / 当前工具能力不够 | [playbooks/current-agent-adapter.md](playbooks/current-agent-adapter.md) |
-| Want token-efficient routing / 想减少 token 消耗 | [routing/skill-router.md](routing/skill-router.md) |
-
 ## How it works / 工作流
 
 FirstMVPSkill 把一个模糊想法压缩成可执行、可检查、可发布的小项目闭环。
@@ -40,6 +29,17 @@ flowchart LR
     E --> F[Fix<br/>修复]
     F --> G[Launch<br/>发布]
 ```
+
+## Choose your path / 选择入口
+
+| You are... / 你的情况 | Start here / 从这里开始 |
+|---|---|
+| First-time user / 第一次使用 | [START_HERE.md](START_HERE.md) |
+| Have an idea but no plan / 有想法但没计划 | [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md) |
+| Need agent commands / 需要写 Agent 指令 | [commands/planning-command.md](commands/planning-command.md) |
+| Choosing tool/mode / 不知道用哪个工具或模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
+| Current agent lacks features / 当前工具能力不够 | [playbooks/current-agent-adapter.md](playbooks/current-agent-adapter.md) |
+| Want token-efficient routing / 想减少 token 消耗 | [routing/skill-router.md](routing/skill-router.md) |
 
 ---
 
