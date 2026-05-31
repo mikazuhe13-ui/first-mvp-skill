@@ -489,16 +489,39 @@ Plan → Build → Review → Fix → Launch
 
 ---
 
-## Contributing
+## Contributing / 参与贡献
 
-This is a Skill Pack, not a framework. If you want to contribute:
+欢迎提交 issue 和 PR。
 
-1. Keep it simple
-2. Keep it copy-paste usable
-3. Keep it beginner-friendly
-4. Don't add complexity
+如果你发现：
 
-Open an issue or PR if you have a better example, a clearer command, or a simpler template.
+- 某个 AI Agent 工作流不清楚
+- 某个 command 不好用
+- 某个新手案例可以更好
+- 某个工具适配需要补充
+- 某个中文解释不够新手友好
+- 某个 playbook 太复杂或不够实用
+
+都可以提出 issue 或 PR。
+
+为了方便 review，请尽量保持：
+
+- 简洁
+- 可复制
+- 中文优先
+- 新手友好
+- 不增加不必要复杂度
+- 每个改动都要服务于：帮助新手做出第一个 AI MVP
+
+适合贡献的内容：
+
+- `examples/`：新增一个真实 MVP 案例
+- `commands/`：优化一个可复制 Agent 指令
+- `checklists/`：补充一个验收清单
+- `playbooks/`：改进一个 Agent 使用场景
+- `docs/`：让安装、使用、贡献说明更清楚
+
+提交 PR 前，请先阅读 [docs/contributing.md](docs/contributing.md)。
 
 Commit format:
 
