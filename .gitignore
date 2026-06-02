@@ -10,3 +10,5 @@ npm-debug.log*
 
 .npm-cache/
 .tmp-install-test/
+
+.tmp-onboarding-test/
