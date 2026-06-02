@@ -10,6 +10,10 @@ If you are an ordinary user, student, creator, AI beginner, or anyone with an id
 **Can't choose a tool? Can't pick a mode? Don't know where to start?**
 **Stop overthinking. Build a working mini version first.**
 
+完整使用方式见：[Usage Guide / 使用指南](docs/usage-guide.md)。
+
+如果你的工具不支持 skill 或 `/` 指令，也可以直接复制下面的 starter prompt 使用。
+
 这个文件是给第一次使用的人看的。如果你已经熟悉 AI Agent，可以直接看 `playbooks/agent-mode-matrix.md` 和 `routing/skill-router.md`。
 
 This file is for first-time users. If you already use AI agents, jump to `playbooks/agent-mode-matrix.md` and `routing/skill-router.md`.

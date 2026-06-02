@@ -213,6 +213,7 @@ That is the smallest useful path: one idea, one next action, one working result.
 
 | Need | Read |
 |---|---|
+| Usage Guide / 使用指南 | [docs/usage-guide.md](docs/usage-guide.md) |
 | Installation / 安装 | [docs/installation.md](docs/installation.md) |
 | Quick Start / 快速开始 | [docs/quick-start.md](docs/quick-start.md) |
 | Complete Guide / 完整指南 | [docs/guide.md](docs/guide.md) |

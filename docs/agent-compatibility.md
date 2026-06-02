@@ -30,6 +30,31 @@ You do not need to switch tools. Check your current tool's capabilities first.
 | Short context agent / 上下文很短 | 使用 Compact Mode 和 `routing/compact-output-rules.md` |
 | Tool lacks a feature / 工具能力不足 | 使用 `playbooks/current-agent-adapter.md` 和 `playbooks/fallback-command-patterns.md` |
 
+## Agent-aware onboarding / 智能体适配式导航
+
+安装或克隆后，先确认你正在使用哪个 Agent 或工具。不要默认所有工具都支持相同的 skill、slash command 或文件读取能力。
+
+After install or clone, first identify your current agent/tool. Do not assume every tool supports the same skills, slash commands, or file access.
+
+| Agent / Tool | Start here / 推荐入口 |
+|---|---|
+| Claude Code | `START_HERE.md` → `commands/README.md` → `commands/coding-agent-command.md` → `commands/codex-review-command.md` |
+| Cursor | `START_HERE.md` → `commands/README.md` → `commands/coding-agent-command.md` → `playbooks/current-agent-adapter.md` |
+| Codex | `START_HERE.md` → `commands/coding-agent-command.md` → `commands/codex-review-command.md` → `checklists/acceptance-gate-checklist.md` |
+| ChatGPT / Claude web | 复制 `START_HERE.md` 的 starter prompt，再把生成的 Day 1 command 交给编码工具 |
+| OpenCode / OpenClaw | `START_HERE.md` → `docs/agent-compatibility.md` → `playbooks/agent-capability-checklist.md` → `playbooks/fallback-command-patterns.md` |
+| Other / Not sure | `docs/agent-compatibility.md` → `START_HERE.md` → `routing/skill-router.md` |
+
+第一条输入 / Starter input:
+
+```text
+我想做一个 AI 小项目：____。我每天能投入 __ 分钟。请按 FirstMVPSkill 帮我生成 Tiny MVP、Not in V1、7 天计划、Day 1 指令和 Acceptance Gate。
+```
+
+如果你的工具支持 slash command，可以尝试 `/first-mvp-launch [你的想法]`。如果不支持，直接使用普通 prompt。
+
+If your tool supports slash commands, try `/first-mvp-launch [your idea]`. If not, use the plain prompt.
+
 ## Recommended path by user type / 按用户类型推荐路径
 
 | User type / 用户类型 | Recommended path / 推荐路径 |
