@@ -14,6 +14,24 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 
 **Output size should match task complexity. Small questions get small answers.**
 
+在规划前先判断 token / cost budget。缺失时默认 Low。
+
+Before planning, check the token / cost budget. If missing, default to Low.
+
+---
+
+## Token / cost budget levels
+
+| Budget | Default mode | Use this behavior |
+|---|---|---|
+| Low | Compact Mode | One task at a time, minimal explanations, no broad alternatives unless needed |
+| Medium | Standard Mode | 2-3 options, brief tradeoffs, normal review |
+| High | Full Mode or High Review | Deeper review, more testing, more alternatives, better documentation, but no uncontrolled scope expansion |
+
+**Rule:** Higher token budget does not mean unlimited features.
+
+**Rule:** 更高 token / 费用预算不代表可以无限加功能。它应该用于更好的 review、测试、UX polish、文档和 launch readiness。
+
 ---
 
 ## Three output modes

@@ -12,6 +12,8 @@ If you are an ordinary user, student, creator, AI beginner, or anyone with an id
 
 完整使用方式见：[Usage Guide / 使用指南](docs/usage-guide.md)。
 
+不知道该用什么指令或模式？看 [Command Mode Router](routing/command-mode-router.md)。
+
 如果你的工具不支持 skill 或 `/` 指令，也可以直接复制下面的 starter prompt 使用。
 
 这个文件是给第一次使用的人看的。如果你已经熟悉 AI Agent，可以直接看 `playbooks/agent-mode-matrix.md` 和 `routing/skill-router.md`。
@@ -27,9 +29,11 @@ FirstMVPSkill 是一个面向普通人、新手、学生、创作者和 AI Agent
 - Tiny MVP
 - Not in V1
 - 最小工具栈
-- 7 天计划
+- 7 天详细工作块
+- 推荐 command 和 mode
 - Day 1 指令
 - Acceptance Gate
+- Human Review Gate
 - 下一步动作
 
 ## 你不需要先懂什么
@@ -38,6 +42,12 @@ FirstMVPSkill 是一个面向普通人、新手、学生、创作者和 AI Agent
 - **Tiny MVP** = 第一个最小可运行版本，不是完整产品
 - **Review** = 检查 AI 做出来的东西是否符合要求
 - **Launch** = 把一个小版本真正发布或分享出去
+
+Tiny MVP 是最低起点，不是最高上限。根据你的每天可投入时间、能力和 Agent 工具，7 天可以做出最小 demo、完整小项目，甚至粗糙的中小型产品原型。
+
+Tiny MVP is the minimum starting point, not the maximum outcome. Depending on time, skill, and agent capability, 7 days can produce a tiny demo, a complete small project, or a rough mid-sized prototype.
+
+但不要把 7 天理解成成熟商业产品。Not in V1 和 Acceptance Gate 仍然必须保留。
 
 你不需要先学完所有工具，也不需要先做完整 SaaS。
 
@@ -53,16 +63,40 @@ FirstMVPSkill 是一个面向普通人、新手、学生、创作者和 AI Agent
 我的想法是：
 [写下你的想法]
 
+我的每天可投入时间是：
+[15-30 分钟 / 1 小时 / 2-3 小时 / 4+ 小时 / 不确定]
+
+我的 token / 费用预算是：
+[低 / 中 / 高 / 不确定]
+
+我现在使用的 Agent / 工具是：
+[ChatGPT / Claude / Claude Code / Cursor / Codex / OpenCode / 其他 / 不确定]
+
+我希望 7 天后得到：
+[Tiny MVP / 小项目 / 粗糙产品原型 / 中小型产品原型 / 不确定]
+
+我个人最想保留的想法是：
+[写下你的偏好]
+
+必须包含：
+[写下 must-have]
+
+绝对不要包含：
+[写下 must-not-have]
+
 请用 FirstMVPSkill 帮我输出：
 
 1. 用户水平判断
-2. Tiny MVP（1-3 个功能）
-3. Not in V1（第一版不做什么）
-4. 最小工具栈
-5. 7 天计划
-6. Day 1 指令
-7. Acceptance Gate（验收标准）
-8. 下一步动作
+2. 7-Day Scope Ladder 判断
+3. Tiny MVP / Small MVP 范围
+4. Not in V1
+5. 最小工具栈
+6. 7 天详细工作块
+7. 推荐使用的 command 和 mode
+8. Day 1 指令
+9. Acceptance Gate
+10. Human Review Gate
+11. 下一步动作
 
 要求：
 
@@ -81,16 +115,27 @@ I want to build a small AI project but don't know where to start.
 My idea:
 [Write your idea here]
 
+My daily available time is: [15-30 min / 1 hour / 2-3 hours / 4+ hours / Not sure]
+My token / cost budget is: [Low / Medium / High / Not sure]
+My current agent / tool is: [ChatGPT / Claude / Claude Code / Cursor / Codex / OpenCode / Other / Not sure]
+My desired 7-day outcome is: [Tiny MVP / Small project / Rough product prototype / Mid-sized prototype / Not sure]
+My personal idea or preference is: [write your preference]
+Must-have: [write what must be included]
+Must-not-have: [write what must not be added]
+
 Use FirstMVPSkill to output:
 
 1. User level
-2. Tiny MVP (1-3 features)
-3. Not in V1
-4. Minimal practical stack
-5. 7-day plan
-6. Day 1 command
-7. Acceptance Gate
-8. Next action
+2. 7-Day Scope Ladder decision
+3. Tiny MVP / Small MVP scope
+4. Not in V1
+5. Minimal practical stack
+6. Detailed 7-day work blocks
+7. Recommended command and mode
+8. Day 1 command
+9. Acceptance Gate
+10. Human Review Gate
+11. Next action
 
 Rules:
 
@@ -160,5 +205,6 @@ Use: commands/execution-feedback-loop-command.md
 - 想直接看核心 skill：读 [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md)
 - 想一步步变强：读 [docs/agent-skill-ladder.md](docs/agent-skill-ladder.md)
 - 不知道用哪条指令：读 [commands/README.md](commands/README.md)
+- 不知道用什么指令或模式：读 [routing/command-mode-router.md](routing/command-mode-router.md)
 
 现在先做一件事：复制上面的 starter prompt，填入你的想法。

@@ -17,6 +17,17 @@ If you are not sure what to do, use the plain prompt method first.
 3. 填入你的想法和每天可投入时间
 4. 让当前 AI 工具生成 Tiny MVP、Not in V1、7-day plan、Day 1 command、Acceptance Gate 和 Next Action
 
+Tiny MVP 是最低起点，不是最高上限。7 天目标会根据你的时间、能力和 Agent 工具调整，但不承诺成熟商业产品。
+
+Tiny MVP is the minimum starting point, not the maximum outcome. The 7-day target adapts to your time, skill, and agent capability, but does not promise a mature commercial product.
+
+| Daily time / 每天时间 | 7-day target / 7 天目标 |
+|---|---|
+| 15-30 min/day | Tiny MVP / 最小可运行 demo |
+| 1 hour/day | Small MVP / 1-3 个核心功能的小项目 |
+| 2-3 hours/day | Rough Product / 粗糙但完整的可展示产品 |
+| 4+ hours/day | Mid-sized Prototype / 中小型产品原型 |
+
 Starter pattern / 第一条输入:
 
 ```text
@@ -87,6 +98,10 @@ Slash commands are workflow shortcuts, not required features. Different agents s
 ---
 
 ## 4. Choose by task / 根据任务选择文件
+
+For command and mode decisions, use `routing/command-mode-router.md`.
+
+如果不确定用哪条指令、哪种 mode、是否需要 slash command、subagent 或 long task，先看 `routing/command-mode-router.md`。
 
 | Task / 任务 | File / 文件 |
 |---|---|

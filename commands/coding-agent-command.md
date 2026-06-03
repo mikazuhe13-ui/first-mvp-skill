@@ -105,6 +105,27 @@ After implementation:
 3. Tell me how to test it
 4. List any potential issues
 5. Give me the status update for templates/project-status-template.md
+6. Stop for Human Review Gate. Do not ask "Continue to Day 2?"
+
+Human Review Gate:
+- What was built:
+- How to test it:
+- Acceptance Gate:
+- What the user should inspect:
+- Ask the user:
+  1. Pass / fail?
+  2. What is the most unsatisfying point?
+  3. What is one personal idea you want to add?
+  4. How much time remains today?
+
+If the work completed too quickly:
+- Do not expand scope by default
+- Test one real input
+- Identify one friction point
+- Propose 2-3 small improvements
+- Wait for the user to choose one
+- Apply only that improvement
+- Update notes
 ```
 
 ### For fixing a bug
@@ -199,6 +220,12 @@ After refactoring:
 - Feature status: [done / needs review / blocked]
 - Current phase: REVIEW
 - Next action: Run `commands/codex-review-command.md`
+
+### Human Review Gate
+1. Pass / fail?
+2. What is the most unsatisfying point?
+3. What is one personal idea you want to add?
+4. How much time remains today?
 ```
 
 ---
@@ -212,6 +239,8 @@ After refactoring:
 - [ ] No new dependencies (unless requested)
 - [ ] Testing instructions are clear
 - [ ] Project status update is included
+- [ ] Human Review Gate is included
+- [ ] Agent stops after implementation and does not auto-continue to the next day
 - [ ] You can run the code and it works
 
 ---

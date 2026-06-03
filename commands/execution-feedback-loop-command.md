@@ -71,6 +71,7 @@ Constraints:
 - Make it something I can do in the next 30 minutes
 - Don't suggest starting over
 - Don't add or replace tools
+- After the action, stop for Human Review Gate
 ```
 
 ### Scope creep reset
@@ -201,6 +202,21 @@ After doing the action, update `templates/project-status-template.md`:
 
 ### After this action
 [What to do next]
+
+### Human Review Gate
+Stop after the action. Do not ask "Continue to Day 2?" Ask:
+1. Pass / fail?
+2. What is the most unsatisfying point?
+3. What is one personal idea you want to add?
+4. How much time remains today?
+
+If work completed too quickly, do not expand scope by default. Run a micro-optimization loop:
+1. Test one real input
+2. Identify one friction point
+3. Propose 2-3 small improvements
+4. User chooses one
+5. Apply only that improvement
+6. Update notes
 ```
 
 ---
@@ -214,6 +230,7 @@ After doing the action, update `templates/project-status-template.md`:
 - [ ] Action is doable in 30 minutes or less
 - [ ] You know what to do after the action
 - [ ] Project status update is specified
+- [ ] Human Review Gate is included
 - [ ] You feel like you can continue
 
 ---

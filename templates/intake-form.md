@@ -15,6 +15,20 @@ Use the sections in this file in order. Keep the output compact, preserve MVP sc
 **Project name**: 
 **One sentence**: [Product] helps [user] solve [problem] by [action].
 **Target launch date**: 
+**Daily available time:** [15-30 min / 1 hour / 2-3 hours / 4+ hours / Not sure]
+**Token / cost budget:** [Low / Medium / High / Not sure]
+**Current agent/tool:** [ChatGPT / Claude web / Claude Code / Cursor / Codex / OpenCode / OpenClaw / Other / Not sure]
+**Desired 7-day outcome:** [Tiny MVP / Small project / Rough product prototype / Mid-sized prototype / Not sure]
+**User personal idea or preference:** 
+**Must-have:** 
+**Must-not-have:** 
+
+If missing, use defaults:
+- Daily time: 60 minutes
+- Token budget: Low
+- Current agent: current tool
+- Desired outcome: Tiny MVP first
+- Personal preference: ask after Day 1 review
 
 ---
 
@@ -114,6 +128,13 @@ After filling this form, you'll create a Project Context Pack:
 **One line:** [positioning statement]
 **Stage:** PLAN
 **Day:** 1
+**Daily available time:** [15-30 min / 1 hour / 2-3 hours / 4+ hours]
+**Token / cost budget:** [Low / Medium / High / Not sure]
+**Current agent/tool:** [tool]
+**Desired 7-day outcome:** [Tiny MVP / Small project / Rough product prototype / Mid-sized prototype]
+**Personal preference:** [what should feel like the user's own idea]
+**Must-have:** [must include]
+**Must-not-have:** [must not add]
 
 **MVP scope:**
 1. [Feature 1]

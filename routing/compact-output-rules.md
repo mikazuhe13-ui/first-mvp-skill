@@ -30,6 +30,24 @@ When the user asks a question or describes a situation:
 
 ---
 
+## Low token budget / 低 token 预算
+
+如果 token / 费用预算是 Low 或用户不确定，默认使用 Compact Mode，只输出最小可执行内容。
+
+If token / cost budget is Low or unclear, default to Compact Mode and output only the smallest executable answer.
+
+Include only:
+
+- Tiny MVP
+- Not in V1
+- Day 1 command
+- Acceptance Gate
+- Next action
+
+No long theory. No broad alternatives unless needed. No uncontrolled scope expansion.
+
+---
+
 ## 优先引用文件，不复制全文 / Prefer references over full text
 
 Instead of copying full playbooks or commands, say:

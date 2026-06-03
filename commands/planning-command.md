@@ -37,6 +37,22 @@ Paste this to Claude Code, Cursor, Codex, or ChatGPT:
 ```
 I want to build: [YOUR PROJECT IDEA IN ONE SENTENCE]
 
+Before planning, check these inputs:
+- Daily available time: [15-30 min / 1 hour / 2-3 hours / 4+ hours / Not sure]
+- Token / cost budget: [Low / Medium / High / Not sure]
+- Current agent/tool: [ChatGPT / Claude web / Claude Code / Cursor / Codex / OpenCode / OpenClaw / Other / Not sure]
+- Desired 7-day outcome: [Tiny MVP / Small project / Rough product prototype / Mid-sized prototype / Not sure]
+- Personal idea or preference: [what must feel like my own idea]
+- Must-have: [what must be included]
+- Must-not-have: [what must not be added]
+
+If any input is missing, either ask one brief question or apply these defaults:
+- Daily time: 60 minutes
+- Token budget: Low
+- Current agent: current tool
+- Desired outcome: Tiny MVP first
+- Personal preference: ask after Day 1 review
+
 Help me plan this as a 7-day MVP.
 
 Requirements:
@@ -46,8 +62,10 @@ Requirements:
 4. Recommend a minimal practical stack (2-4 tools, each with a clear job, only tools I already know)
 5. Create a day-by-day plan (Day 1 to Day 7)
 6. Give me the exact command for Day 1
-7. Give me a Project Context Pack for my agent
-8. Give me the first project status update for templates/project-status-template.md
+7. Recommend the command and mode to use next
+8. Give me a Project Context Pack for my agent
+9. Give me the first project status update for templates/project-status-template.md
+10. Include a Human Review Gate after Day 1
 
 Constraints:
 - Do NOT suggest tools I haven't mentioned I know
@@ -55,6 +73,7 @@ Constraints:
 - Do NOT suggest learning new frameworks
 - Do NOT make it more complex than necessary
 - Keep everything simple enough to ship in 7 days
+- Higher time or token budget should improve completeness, testing, review, and polish; not uncontrolled feature growth
 
 My tech level: [BEGINNER / INTERMEDIATE / ADVANCED]
 Tools I know: [LIST THEM]
@@ -77,6 +96,13 @@ Every output must include:
 | Project idea | "An AI study assistant for college students" |
 | Tech level | "Beginner - I know basic HTML" |
 | Known tools | "HTML, CSS, basic JavaScript" |
+| Daily time | "1 hour/day" |
+| Token budget | "Low" |
+| Current agent | "Cursor" |
+| Desired outcome | "Small project" |
+| Personal preference | "I want it to feel calm and visual" |
+| Must-have | "Local demo works" |
+| Must-not-have | "No login" |
 
 ---
 

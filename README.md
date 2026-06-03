@@ -28,6 +28,14 @@ FirstMVPSkill 会根据你每天可投入的时间调整计划。Agent 负责快
 
 Plans adapt to your daily time budget. Agents move fast; users decide, review, and shape the product.
 
+FirstMVPSkill 会先询问你的每日时间、token / 费用预算、当前 Agent 和 7 天目标，再生成适合你的计划。
+
+FirstMVPSkill asks for your daily time, token/cost budget, current agent, and 7-day target before planning.
+
+7 天目标不固定只能做 Tiny MVP。Tiny MVP 是最低起点，不是最高上限；根据时间、能力和 Agent 工具，7 天可以产出最小 demo、完整小项目，甚至粗糙的中小型产品原型。
+
+The 7-day goal is not limited to a Tiny MVP. Tiny MVP is the minimum starting point, not the maximum outcome; 7 days can produce a tiny demo, a complete small project, or a rough mid-sized product prototype.
+
 欢迎 star、issue、PR，尤其欢迎贡献中文 AI MVP 新手案例。
 
 ## Download / 下载
@@ -98,6 +106,7 @@ flowchart LR
 | Want to see a live demo / 想看真实 demo | [examples/real-build-ai-action-plan-generator.md](examples/real-build-ai-action-plan-generator.md) |
 | Have an idea but no plan / 有想法但没计划 | [skills/first-mvp-launch/SKILL.md](skills/first-mvp-launch/SKILL.md) |
 | Want to choose the right command / 不知道用哪条指令 | [commands/README.md](commands/README.md) |
+| Need command/mode routing / 不知道用哪条指令或模式 | [routing/command-mode-router.md](routing/command-mode-router.md) |
 | Need agent commands / 需要写 Agent 指令 | [commands/planning-command.md](commands/planning-command.md) |
 | Want to become better at using agents / 想逐步成为 Agent 熟练用户 | [docs/agent-skill-ladder.md](docs/agent-skill-ladder.md) |
 | Agent power user choosing tools/modes / 熟练用户选择工具或模式 | [playbooks/agent-mode-matrix.md](playbooks/agent-mode-matrix.md) |
@@ -129,6 +138,19 @@ FirstMVPSkill is not a generic prompt collection. It is a decision-making AI MVP
 - 已有工具但不知道该用什么模式的人
 - 学生、创作者、vibe coder、indie hacker
 - 任何想把想法变成可运行小作品的人
+
+## 7-Day Scope Ladder / 7 天范围阶梯
+
+| Daily time / 每天时间 | 7-day target / 7 天目标 |
+|---|---|
+| 15-30 min/day | Tiny MVP / 最小可运行 demo |
+| 1 hour/day | Small MVP / 1-3 个核心功能的小项目 |
+| 2-3 hours/day | Rough Product / 粗糙但完整的可展示产品 |
+| 4+ hours/day | Mid-sized Prototype / 中小型产品原型 |
+
+时间更多可以提高完整度，不代表无限加功能。多出来的时间优先用于 UX、测试、review、文档、发布准备和反馈。
+
+More time can increase completeness, not uncontrolled scope. Do not promise a mature commercial product in 7 days.
 
 ## 30 秒 Demo / 30-second demo
 
@@ -214,6 +236,7 @@ That is the smallest useful path: one idea, one next action, one working result.
 | Need | Read |
 |---|---|
 | Usage Guide / 使用指南 | [docs/usage-guide.md](docs/usage-guide.md) |
+| Command Mode Router / 指令与模式路由器 | [routing/command-mode-router.md](routing/command-mode-router.md) |
 | Installation / 安装 | [docs/installation.md](docs/installation.md) |
 | Quick Start / 快速开始 | [docs/quick-start.md](docs/quick-start.md) |
 | Complete Guide / 完整指南 | [docs/guide.md](docs/guide.md) |

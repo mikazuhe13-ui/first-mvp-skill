@@ -51,22 +51,65 @@ Define the Tiny MVP first, then give the minimal stack and Day 1 command. Preser
 
 ---
 
+## Before planning / 规划前先问
+
+在生成 Tiny MVP、7-day plan 或 Day 1 command 之前，先收集这些输入。如果用户没有回答，不要卡住，使用默认值并标记为 `[ASSUMPTION]`。
+
+Before generating a Tiny MVP, 7-day plan, or Day 1 command, check these inputs first. If missing, apply defaults and label them as `[ASSUMPTION]`.
+
+| Input / 输入 | Options / 选项 | Default / 默认 |
+|---|---|---|
+| 每天可投入时间 / Daily available time | 15-30 min / 1 hour / 2-3 hours / 4+ hours | 60 minutes |
+| Token / cost budget | Low / Medium / High / Not sure | Low |
+| Current agent/tool | ChatGPT / Claude web / Claude Code / Cursor / Codex / OpenCode / OpenClaw / Other / Not sure | current tool |
+| Desired 7-day outcome | Tiny MVP / Small project / Rough product prototype / Mid-sized prototype / Not sure | Tiny MVP first |
+| Personal idea or preference | What must feel like the user's own idea? | ask after Day 1 review |
+| Must-have | What must be included? | none |
+| Must-not-have | What must not be added? | keep Not in V1 |
+
+Ask briefly:
+
+```text
+规划前请先告诉我：
+1. 你每天可投入多少时间？15-30 min / 1 hour / 2-3 hours / 4+ hours
+2. 你的 token / 费用预算？Low / Medium / High / Not sure
+3. 你现在使用的 Agent / 工具？ChatGPT / Claude web / Claude Code / Cursor / Codex / OpenCode / OpenClaw / Other / Not sure
+4. 你希望 7 天后得到什么？Tiny MVP / Small project / Rough product prototype / Mid-sized prototype / Not sure
+5. 你个人最想保留的想法是什么？
+6. 有哪些 must-have？
+7. 有哪些 must-not-have？
+```
+
+**Rule:** 更高时间或 token 预算只提高完整度、测试、review 和 polish，不代表无限加功能。
+
+**Rule:** Higher time or token budget improves completeness, testing, review, and polish. It does not allow uncontrolled feature growth.
+
+---
+
 ## Time Budget / 时间预算
 
 如果用户给了每天可投入时间，就按时间调整 7-day plan。如果没有说明，默认每天 60 分钟。
 
 If the user gives daily available time, adapt the 7-day plan to that time. If not given, assume 60 minutes per day.
 
-| Daily time / 每天时间 | Planning strategy / 计划策略 |
+### 7-Day Scope Ladder / 7 天范围阶梯
+
+Tiny MVP 是最低起点，不是最高上限。根据用户每天可投入时间、能力和 Agent 工具，7 天可以产出最小 demo、完整小项目，甚至粗糙的中小型产品原型。
+
+Tiny MVP is the minimum starting point, not the maximum outcome. Depending on daily time budget, skill level, and agent capability, 7 days can produce a tiny demo, a complete small project, or a rough mid-sized product prototype.
+
+| Daily time / 每天时间 | 7-day target / 7 天目标 |
 |---|---|
-| 15-30 min/day | 只做一个小动作，不追求完整功能 / Do one small action only |
-| 1 hour/day | 做一个小功能 + 一次验收 / Build one small feature and verify it |
-| 2-3 hours/day | 做功能、review、fix、优化 / Build, review, fix, and polish |
-| 4+ hours/day | 可以多轮优化，但不扩 scope / Run more iterations without expanding scope |
+| 15-30 min/day | Tiny MVP / 最小可运行 demo |
+| 1 hour/day | Small MVP / 1-3 个核心功能的小项目 |
+| 2-3 hours/day | Rough Product / 粗糙但完整的可展示产品 |
+| 4+ hours/day | Mid-sized Prototype / 中小型产品原型 |
 
-**Rule:** 时间更多，不代表功能更多。时间更多，应该用于 review、测试、UX polish、bug fixing 和 launch readiness。
+**Rule:** 时间更多可以提高完整度，不代表无限加功能。多出来的时间应该用于 UX、测试、review、文档、launch readiness 和 feedback。
 
-**Rule:** More time does not mean more features. More time means better review, testing, UX polish, bug fixing, and launch readiness.
+**Rule:** More time can increase completeness, not uncontrolled scope. Extra time should go to UX, testing, review, documentation, launch readiness, and feedback.
+
+**Do not** promise a mature commercial product in 7 days. Keep Not in V1 and Acceptance Gate visible.
 
 ---
 
@@ -118,8 +161,9 @@ Output only:
 3. Not in V1
 4. Minimal practical stack (2-4 tools)
 5. 7-day plan summary
-6. Day 1 command
-7. One next action
+6. Recommended command and mode
+7. Day 1 command
+8. One next action
 
 Reference supporting files instead of copying them:
 - `commands/planning-command.md`
@@ -317,6 +361,12 @@ Recommend 2-4 tools, each with a clear job. No optional tools.
 
 Generate a day-by-day plan adapted to the user's daily time budget. Each day must show the goal, time-band actions, Acceptance Gate, and one next action.
 
+The 7-day target should follow the 7-Day Scope Ladder. Do not overpromise a polished production-grade product.
+
+**Core principle:** Agent 用几分钟完成构建，不代表这一天结束。Day 指的是用户的一轮推进周期，不是 Agent 的运行时间。
+
+**Core principle:** Agent time is not user time. A "Day" means a human progress cycle, not agent runtime.
+
 ```markdown
 ## 7-day plan
 
@@ -427,6 +477,13 @@ Give the user the exact commands they'll need:
 
 ```markdown
 ## Agent commands
+
+### Recommended command and mode
+- Command: [routing/command-mode-router.md recommendation]
+- Mode: [Compact / Standard / High / Full]
+- Slash command: [optional, only if supported]
+- Subagent: [No by default]
+- Long task: [Only if scope and file boundaries are clear]
 
 ### Day 1 command
 [Paste to Claude Code / Cursor / ChatGPT]

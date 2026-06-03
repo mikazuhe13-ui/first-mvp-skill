@@ -4,6 +4,10 @@
 
 This file helps you choose the right agent command for the current step.
 
+如果你不确定该用哪条 command 或哪种 mode，先看 [routing/command-mode-router.md](../routing/command-mode-router.md)。
+
+If you are unsure which command or mode to use, start with [routing/command-mode-router.md](../routing/command-mode-router.md).
+
 ## Command selector / 指令选择
 
 | Situation / 当前情况 | Use this command |
